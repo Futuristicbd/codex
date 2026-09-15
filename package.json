@@ -1,8 +1,14 @@
 {
+  "name": "localpost-hub",
+  "version": "1.0.0",
+  "description": "Self-hosted social media posting platform — connect your pages, compose once, publish everywhere. Runs locally with zero npm dependencies.",
+  "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 5173",
-    "build": "node scripts/build.mjs",
-    "preview": "python3 -m http.server 4173 --directory dist"
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {},
   "devDependencies": {}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalPost Hub</title>
+    <meta name="description" content="Self-hosted social media posting platform. Connect your pages, compose once, publish everywhere — all running locally." />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark" id="brand-mark">🚀</div>
+          <div>
+            <div class="brand-name" id="brand-name">LocalPost Hub</div>
+            <div class="brand-sub">local social studio</div>
+          </div>
+        </div>
+        <nav class="nav" id="nav">
+          <button data-view="dashboard" class="active"><span>▤</span> Dashboard</button>
+          <button data-view="compose"><span>✎</span> Compose</button>
+          <button data-view="media"><span>◲</span> Media Library</button>
+          <button data-view="connections"><span>⇄</span> Connections</button>
+          <button data-view="settings"><span>⚙</span> Settings</button>
+        </nav>
+        <div class="sidebar-foot">
+          <div class="dot-live"></div>
+          Running locally
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <h1 id="view-title">Dashboard</h1>
+          <button class="btn btn-primary" id="quick-compose">＋ New post</button>
+        </header>
+        <section id="view" class="view"></section>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" hidden></div>
+    <div id="modal-root"></div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

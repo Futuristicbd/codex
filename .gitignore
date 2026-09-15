@@ -1,3 +1,6 @@
-dist/
 node_modules/
 .DS_Store
+
+# Local runtime data: uploaded media, saved posts, and API credentials.
+# Never committed — everything stays on your machine.
+data/
