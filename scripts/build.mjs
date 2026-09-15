@@ -4,4 +4,5 @@ await rm('dist', { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 await cp('index.html', 'dist/index.html');
 await cp('src', 'dist/src', { recursive: true });
-console.log('Static landing page built in dist/');
+await cp('app', 'dist/app', { recursive: true });
+console.log('Static site + dashboard built in dist/');
